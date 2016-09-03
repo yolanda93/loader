@@ -1,0 +1,22 @@
+OS=$(shell uname -s)
+
+PRAC=cargador
+CURSO=2013
+
+EXE=
+DYNLIB=plugin_contador.so
+DIRS=
+
+CC=cc
+LD=ld
+AR=ar 
+RANLIB=ranlib
+
+INCLUDE=
+DEFINE=
+LIBS=
+
+CFLAGS =-Wall -g -fPIC $(INCLUDE) $(DEFINE)
+ARFLAGS=
+LDFLAGS=-G -Bdynamic
+
